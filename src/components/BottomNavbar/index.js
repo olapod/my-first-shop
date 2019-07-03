@@ -1,13 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import "./bottomNavbar.scss";
 
 export const BottomNavbar = props => {
   return (
     <div>
       <nav className="bottomNavbar">
-                
         <NavLink exact to="/home" activeClassName="active">
           Home
         </NavLink>
@@ -20,8 +18,6 @@ export const BottomNavbar = props => {
         <NavLink exact to="/kontakt" activeClassName="active">
           Kontakt
         </NavLink>
-        
-        
       </nav>
     </div>
   );

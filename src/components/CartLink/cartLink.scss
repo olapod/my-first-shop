@@ -1,23 +1,23 @@
 .shoppingCart {
-    .hidden {
-        display: none;
-    }
-    .cart-icon {
-        font-size: 24px;
-    }
-    .show {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        position: relative;
-        left: -8px;
-        text-align: center;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        color: white;
-        border-radius: 50%;
-        background-color: orangered;
-        font-size: 10px;
 
-    }
+  .hidden {
+    display: none;
+  }
+  .cart-icon {
+    font-size: 24px;
+  }
+  .show {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -8px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    border-radius: 50%;
+    background-color: orangered;
+    font-size: 10px;
+  }
 }

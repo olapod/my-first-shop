@@ -10,10 +10,10 @@ import  CartLink from "../CartLink"
 
 
 export const Navbar = props => {
-  
+
 
   return (
-    <div>
+    <div className="navbar-container">
       <nav className='topNavbar d-flex justify-content-between'>
         <div><img src={logo} alt='logo AlexCompany'/></div>
         <div className="navLinks">
@@ -34,5 +34,7 @@ export const Navbar = props => {
       </nav>
     </div>
   );
-  
+
 };
+
+
