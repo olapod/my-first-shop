@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Button from 'react-bootstrap/Button';
 import "./recipe.scss"
 
 
 class Recipe extends Component{
-    
     componentWillUnmount() {
          if(this.refs.shipping.checked)
               this.props.substractShipping()
@@ -20,21 +20,19 @@ class Recipe extends Component{
     }
 
     render(){
-  
         return(
             <div className="recipe-container container">
                 <div className="collection">
-                     <label>
+                    <label>
                         <input type="checkbox" ref="shipping" onChange= {this.handleChecked} />
                         <span>Koszt wysyłki(+12zł)</span>
                     </label><br/>
-                       
                     <span>Razem: {this.props.total} zł</span>
                 </div>
-                    <div className="checkout">
-                        <button>Zamawiam</button>
-                    </div>
-                 </div>
+                <div className="checkout">
+                    <Button>Zamawiam</Button>
+                </div>
+            </div>
         )
     }
 }

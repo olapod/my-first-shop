@@ -1,16 +1,20 @@
 .products-display {
+    margin-top: 20px;
+  .sortList {
+    width: 20%;
 
-    
-    .sortList {
-        width: 15%;
-        button {
-            display: block;
-            margin-top: 20px;
-        }
+    button {
+      display: block;
+      margin-top: 20px;
     }
+  }
 
-    .productList {
-        width: 85%
+  .productList {
+    width: 85%;
+    h3 {
+        text-align: center;
     }
+  }
+
 
 }

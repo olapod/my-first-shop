@@ -1,21 +1,14 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
-
-import "./navbar.scss";
-import logo from '../../images/logo.png'
-
 import  CartLink from "../CartLink"
-
-
+import "./navbar.scss";
+import logo from '../../images/logo.png';
 
 export const Navbar = props => {
-
-
   return (
     <div className="navbar-container">
       <nav className='topNavbar d-flex justify-content-between'>
-        <div><img src={logo} alt='logo AlexCompany'/></div>
+        <div><img className="logo-img" src={logo} alt='logo AlexCompany'/></div>
         <div className="navLinks">
           <NavLink exact to="/home" activeClassName="active">
             Home
@@ -34,7 +27,6 @@ export const Navbar = props => {
       </nav>
     </div>
   );
-
 };
 
 

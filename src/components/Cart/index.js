@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { removeItem,addQuantity,subtractQuantity} from '../../actions/actions-cart';
-import Recipe from '../Recipe';
+import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMinusCircle, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
+import Recipe from '../Recipe';
 import "./cart.scss";
-
 
 
 class Cart extends Component {
@@ -49,7 +49,7 @@ class Cart extends Component {
                         </Link>
                       </td>
                       <td>
-                        <button onClick={()=>{this.handleRemove(item.id)}}>Usuń</button>
+                        <Button onClick={()=>{this.handleRemove(item.id)}}>Usuń</Button>
                       </td>
                     </tr>
                     )

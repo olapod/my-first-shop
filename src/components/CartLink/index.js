@@ -6,7 +6,6 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import './cartLink.scss'
 
 const CartLink = props => {
-
   return (
     <NavLink
       className="link-nav shoppingCart"

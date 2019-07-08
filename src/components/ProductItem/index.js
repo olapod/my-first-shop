@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addToCart } from '../../actions/actions-cart';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import data from '../../data/data.json'
-import { connect } from 'react-redux'
-import { addToCart } from '../../actions/actions-cart'
-import './productItem.scss'
+import data from '../../data/data.json';
+import './productItem.scss';
 
-
-export class ProductItem extends React.Component {
+export class ProductItem extends Component {
 
   constructor(props, context) {
     super(props, context);
@@ -43,23 +42,22 @@ export class ProductItem extends React.Component {
         <h4 className='author'>Autor: {found.author}</h4>
         <span>Opis: {found.description}</span>
         <span>Cena: {found.price} zł</span>
-        <button onClick={()=>this.handleClick(found.id)}>Dodaj do koszyka</button>
+        <Button onClick={()=>this.handleClick(found.id)}>Dodaj do koszyka</Button>
         <Modal show={this.state.show} onHide={this.handleClose}>
-    <Modal.Header closeButton>
-      <Modal.Title>Dodano produkt do koszyka</Modal.Title>
-    </Modal.Header>
-    <Modal.Body>
-      <span>Dodano książkę "{found.title}"</span>
-      <span><img className='product-photo-modal' src={found.imgurl} alt="Book about something"/></span>
-    </Modal.Body>
-    <Modal.Footer>
-      <Button variant="secondary" onClick={this.handleClose}>
-        Zamknij
-      </Button>
-    </Modal.Footer>
-  </Modal>
-    </div>
-
+          <Modal.Header closeButton>
+            <Modal.Title>Dodano produkt do koszyka</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <span>Dodano książkę "{found.title}"</span>
+            <span><img className='product-photo-modal' src={found.imgurl} alt="Book about something"/></span>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+            Zamknij
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
   }
 }
 
@@ -69,12 +67,9 @@ const mapStateToProps = (state)=>{
   }
 }
 const mapDispatchToProps= (dispatch)=>{
-
   return{
       addToCart: (id)=>{dispatch(addToCart(id))}
   }
 }
-
-
 
 export default connect(mapStateToProps,mapDispatchToProps)(ProductItem)

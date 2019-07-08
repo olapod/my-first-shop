@@ -1,10 +1,11 @@
-import React from "react";
-import ProductList from '../ProductList'
+import React, { Component } from 'react';
+import ProductList from '../ProductList';
+import Button from 'react-bootstrap/Button';
 import "./home.scss";
-import data from '../../data/data.json'
+import data from '../../data/data.json';
 
 
-export class Home extends React.Component {
+export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,21 +44,21 @@ sortByTitle(direction) {
 }
 
   render() {
-    
+
     return <div className='products-display d-flex justify-content-between'>
       <div className="sortList">
-        <p>Sortuj</p>
-        <button onClick={() => this.sortByTitle('asc')}>Tytuł A-Z</button>
-        <button onClick={() => this.sortByTitle('desc')}>Tytuł Z-A</button> 
-        <button onClick={() => this.sortByPrice('asc')}>Cena rosnąco</button>
-        <button onClick={() => this.sortByPrice('desc')}>Cena malejąco</button>
+        <h3>Sortuj</h3>
+        <Button onClick={() => this.sortByTitle('asc')}>Tytuł A-Z</Button>
+        <Button onClick={() => this.sortByTitle('desc')}>Tytuł Z-A</Button>
+        <Button onClick={() => this.sortByPrice('asc')}>Cena rosnąco</Button>
+        <Button onClick={() => this.sortByPrice('desc')}>Cena malejąco</Button>
       </div>
-      
+
       <div className="productList">
         <h3>Lista książek</h3>
         <ProductList data={this.state.data} />
       </div>
-      
+
       </div>
   }
 }

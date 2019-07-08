@@ -8,7 +8,6 @@ const Product = props => {
       to={`/produkt/${props.id}`}
       key={`produkt-${props.id}`}
       id={`produkt-${props.id}`}
-        
       {...props}
     >
       <div className="product-wrapper" style={{
@@ -17,7 +16,6 @@ const Product = props => {
         backgroundSize: `cover`,
         backgroundPosition: `center`
       }}>
-
       </div>
       <div className="product-info-wrapper">
         <span className="product-name">Tytuł: {props.title}</span>
@@ -33,6 +31,6 @@ const Product = props => {
 
 export default Product;
 
-      
 
-  
+
+
