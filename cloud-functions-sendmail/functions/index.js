@@ -6,16 +6,6 @@ const config = require('./config');
 const cors = require('cors')({origin: true});
 admin.initializeApp();
 
-let transporter = nodemailer.createTransport({
-  pool: true,
-  host: config.HOST,
-  port: 465,
-  secure: true,
-  auth: {
-    user: config.USER,
-    pass: config.PASS
-  }
-});
 
 exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
@@ -36,6 +26,17 @@ exports.sendMail = functions.https.onRequest((req, res) => {
         subject: 'Prośba o kontakt', // Subject line
         html: output // html body
       };
+
+    let transporter = nodemailer.createTransport({
+        pool: true,
+        host: config.HOST,
+        port: 465,
+        secure: true,
+        auth: {
+          user: config.USER,
+          pass: config.PASS
+        }
+      });
 
       // returning result
       return transporter.sendMail(mailOptions, (erro, info) => {
