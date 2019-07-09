@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import GoogleMap from "../GoogleMap"
+import GoogleMap from '../GoogleMap';
 import axios from 'axios';
-import "./contactForm.scss"
+import './contactForm.scss'
 
 export class ContactForm extends Component {
 
@@ -65,8 +65,8 @@ export class ContactForm extends Component {
   getResponse() {
     const { name, phone, email, message } = this.state;
     axios.post(
-      // "http://localhost:8080/api/form"
-      "https://us-central1-contactform-244310.cloudfunctions.net/sendMail", {
+      // 'http://localhost:8080/api/form'
+      'https://us-central1-contactform-244310.cloudfunctions.net/sendMail', {
       name,
       phone,
       email,
@@ -83,7 +83,7 @@ export class ContactForm extends Component {
   render() {
 	const { validated } = this.state;
     return (
-		  <div className="container contact-container">
+		  <div className='container contact-container'>
        <div className='message-form'>
 		    <h3>W razie pytań skontaktuj się z nami</h3>
 		    <Form
@@ -91,47 +91,47 @@ export class ContactForm extends Component {
           validated={validated}
           onSubmit={e => this.handleSubmit(e)}
 		    >
-		      <Form.Group controlId="formName">
+		      <Form.Group controlId='formName'>
             <Form.Label>Imię i nazwisko</Form.Label>
 	          <Form.Control
 	            required
-	            type="text"
-	            name="name"
-	            placeholder="Imię i nazwisko"
+	            type='text'
+	            name='name'
+	            placeholder='Imię i nazwisko'
 	            onChange={ this.handleChange }
 	            value={this.state.name}
 	          />
 
           </Form.Group>
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId='formBasicEmail'>
             <Form.Label>Adres e-mail</Form.Label>
 	          <Form.Control
 	            required
-	            type="email"
-	            name="email"
-	            placeholder="Podaj adres e-mail"
+	            type='email'
+	            name='email'
+	            placeholder='Podaj adres e-mail'
 	            onChange={ this.handleChange}
 	            value={this.state.email}/>
           </Form.Group>
-          <Form.Group controlId="formBasicPhone">
+          <Form.Group controlId='formBasicPhone'>
             <Form.Label>Numer telefonu</Form.Label>
 	          <Form.Control
-	            type="phone"
-	            name="phone"
-	            placeholder="Nr telefonu"
+	            type='phone'
+	            name='phone'
+	            placeholder='Nr telefonu'
 	            onChange={ this.handleChange}
 	            value={this.state.phone} />
           </Form.Group>
-          <Form.Group controlId="formBasicMessage">
+          <Form.Group controlId='formBasicMessage'>
             <Form.Label>Treść wiadomości</Form.Label>
-	          <Form.Control as="textarea" rows="5"
+	          <Form.Control as='textarea' rows='5'
 	            required
-	            placeholder="Wiadomość"
+	            placeholder='Wiadomość'
 	            name='message'
 	            onChange={ this.handleChange}
 	            value={this.state.message} />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant='primary' type='submit'>
             Wyślij wiadomość
           </Button>
         </Form>
@@ -143,15 +143,15 @@ export class ContactForm extends Component {
             Skontaktujemy się z Tobą w ciągu 24h.
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
+            <Button variant='secondary' onClick={this.handleClose}>
               Zamknij
             </Button>
           </Modal.Footer>
         </Modal>
       </div>
-      <div className="contactData">
+      <div className='contactData'>
 		    <h3>Tu nas znajdziesz</h3>
-		    <div className="map-container">
+		    <div className='map-container'>
 		      <GoogleMap />
 		    </div>
 		    <h3>Adres:</h3>

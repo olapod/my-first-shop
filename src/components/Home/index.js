@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProductList from '../ProductList';
 import Button from 'react-bootstrap/Button';
-import "./home.scss";
+import './home.scss';
 import data from '../../data/data.json';
 
 
@@ -10,7 +10,7 @@ export class Home extends Component {
     super(props);
     this.state = {
       data: data,
-      direction: "asc"
+      direction: 'asc'
     };
     this.sortBy = this.sortByPrice.bind(this);
   }
@@ -18,9 +18,9 @@ export class Home extends Component {
   sortByPrice(direction) {
     this.setState({
       data: data.sort((a, b) => {
-        if (direction === "asc") {
+        if (direction === 'asc') {
           return parseFloat(a['price']) - parseFloat(b['price'])
-        } else if (direction === "desc") {
+        } else if (direction === 'desc') {
           return parseFloat(b['price']) - parseFloat(a['price'])
         } else {
           return 0;
@@ -32,9 +32,9 @@ export class Home extends Component {
 sortByTitle(direction) {
   this.setState({
     data: data.sort((a, b) => {
-      if (direction === "asc") {
+      if (direction === 'asc') {
         return a['title'].localeCompare(b['title'])
-      } else if (direction === "desc") {
+      } else if (direction === 'desc') {
         return b['title'].localeCompare(a['title'])
       } else {
         return 0;
@@ -46,7 +46,7 @@ sortByTitle(direction) {
   render() {
 
     return <div className='products-display d-flex justify-content-between'>
-      <div className="sortList">
+      <div className='sortList'>
         <h3>Sortuj</h3>
         <Button onClick={() => this.sortByTitle('asc')}>Tytuł A-Z</Button>
         <Button onClick={() => this.sortByTitle('desc')}>Tytuł Z-A</Button>
@@ -54,7 +54,7 @@ sortByTitle(direction) {
         <Button onClick={() => this.sortByPrice('desc')}>Cena malejąco</Button>
       </div>
 
-      <div className="productList">
+      <div className='productList'>
         <h3>Lista książek</h3>
         <ProductList data={this.state.data} />
       </div>

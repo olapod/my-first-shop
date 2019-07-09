@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import Product from '../Product';
-import "./productList.scss";
+import './productList.scss';
 
 class ProductsList extends Component {
 
@@ -28,8 +28,8 @@ class ProductsList extends Component {
   render() {
     const { currentPage } = this.state;
 
-    return (<div className="products-list">
-            <div className="products-list_container">
+    return (<div className='products-list'>
+            <div className='products-list_container'>
               {this.props.data
                 .map(a => <Product key={`product-${a.id}`} {...a} />)
                 .slice(
@@ -37,23 +37,23 @@ class ProductsList extends Component {
                   (currentPage + 1) * this.pageSize
                 )
                 .map((data, i) => (
-                    <div className="product-list_item" key={i}>
+                    <div className='product-list_item' key={i}>
                       {data}
                     </div>
                 ))}
             </div>
-            <div className="pagination-wrapper">
+            <div className='pagination-wrapper'>
             <Pagination
-                className="pagination-main"
-                aria-label="Page navigation example"
+                className='pagination-main'
+                aria-label='Page navigation example'
             >
               <PaginationItem disabled={currentPage <= 0}>
                 <PaginationLink
                   onClick={e => this.handleClick(e, currentPage - 1)}
                   previous
-                  href="#"
+                  href='#'
                 />
-                <i className="far fa-chevron-square-left" />
+                <i className='far fa-chevron-square-left' />
               </PaginationItem>
 
               {[...Array(this.pagesCount)].map((page, i) => (
@@ -64,7 +64,7 @@ class ProductsList extends Component {
               >
                 <PaginationLink
                   onClick={e => this.handleClick(e, i)}
-                  href="#"
+                  href='#'
                 >
                 {i + 1}
                 </PaginationLink>
@@ -75,7 +75,7 @@ class ProductsList extends Component {
                 <PaginationLink
                   onClick={e => this.handleClick(e, currentPage + 1)}
                   next
-                  href="#"
+                  href='#'
                 />
               </PaginationItem>
             </Pagination>

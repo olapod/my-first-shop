@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMinusCircle, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import Recipe from '../Recipe';
-import "./cart.scss";
+import './cart.scss';
 
 
 class Cart extends Component {
@@ -28,23 +28,23 @@ class Cart extends Component {
   render(){
     let addedItems = this.props.items.length ?
       (
-        <div className="container cart-container">
-          <div className="cart">
+        <div className='container cart-container'>
+          <div className='cart'>
             <h5>Zamówienie:</h5>
-            <table className="collection">
+            <table className='collection'>
               <tbody>
                 {this.props.items.map((item, index) =>{
                   return(
-                    <tr className="collection-item " key={index}>
+                    <tr className='collection-item ' key={index}>
                       <td><img src={item.imgurl} alt={item.imgurl}/></td>
                       <td>Tytuł: {item.title}</td>
                       <td>Cena: {item.price} zł</td>
                       <td>
-                        <Link to="/koszyk">
+                        <Link to='/koszyk'>
                           <FontAwesomeIcon icon={faPlusCircle} onClick={()=>{this.handleAddQuantity(item.id)}}></FontAwesomeIcon>
                         </Link>
                         <span>Ilość: {item.quantity}</span>
-                        <Link to="/koszyk">
+                        <Link to='/koszyk'>
                           <FontAwesomeIcon icon={faMinusCircle} onClick={()=>{this.handleSubtractQuantity(item.id)}}></FontAwesomeIcon>
                         </Link>
                       </td>
@@ -62,9 +62,9 @@ class Cart extends Component {
         </div>
       ):
       (
-        <div className="empty-cart">
-          <h5 className="noProductFound">Nie znaleźliśmy żadnych produktów w Twoim koszyku!</h5>
-          <Link to="/home" className="backToHome">
+        <div className='empty-cart'>
+          <h5 className='noProductFound'>Nie znaleźliśmy żadnych produktów w Twoim koszyku!</h5>
+          <Link to='/home' className='backToHome'>
             <p>Wróć na </p>
             <FontAwesomeIcon icon={faHome} />
             <p>stronę główną, aby kontynuwać zakupy</p>
@@ -72,7 +72,7 @@ class Cart extends Component {
         </div>
       )
       return (
-        <div className="container">
+        <div className='container'>
           {addedItems}
         </div>
       )

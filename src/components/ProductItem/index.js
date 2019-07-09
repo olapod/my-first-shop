@@ -37,7 +37,7 @@ export class ProductItem extends Component {
 
     return <div className='product-item-wrapper'>
         <h3>Opis książki</h3>
-        <span><img className='product-photo' src={found.imgurl} alt="Book about something"/></span>
+        <span><img className='product-photo' src={found.imgurl} alt='Book about something'/></span>
         <h3 className='title'>Tytuł: {found.title}</h3>
         <h4 className='author'>Autor: {found.author}</h4>
         <span>Opis: {found.description}</span>
@@ -48,11 +48,11 @@ export class ProductItem extends Component {
             <Modal.Title>Dodano produkt do koszyka</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <span>Dodano książkę "{found.title}"</span>
-            <span><img className='product-photo-modal' src={found.imgurl} alt="Book about something"/></span>
+            <span>Dodano książkę '{found.title}'</span>
+            <span><img className='product-photo-modal' src={found.imgurl} alt='Book about something'/></span>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleClose}>
+            <Button variant='secondary' onClick={this.handleClose}>
             Zamknij
             </Button>
           </Modal.Footer>

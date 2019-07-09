@@ -5,8 +5,8 @@
      "price": 32,
      "old_price": 40,
      "info": ["promocja", ""],
-     "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/EB7/9788380756830.jpg"       
-    }, {   
+     "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/EB7/9788380756830.jpg"
+    }, {
         "id": 2,
         "title": "Pacjentka",
         "author": "Alex Michaelides",
@@ -14,8 +14,8 @@
         "price": 45,
         "old_price": "",
         "info": ["", "nowość"],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/008/9788328061477.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/008/9788328061477.jpg"
+       }, {
         "id": 3,
         "title": "Złota klatka",
         "author": "Camilla Lackberg",
@@ -23,8 +23,8 @@
         "price": 97,
         "old_price": "",
         "info": ["", ""],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/FC2/9788381430258.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/FC2/9788381430258.jpg"
+       }, {
         "id": 4,
         "title": "Narodziny królowej",
         "author": "Rebecca Ross",
@@ -32,8 +32,8 @@
         "price": 25,
         "old_price": 30,
         "info": ["promocja", "nowość"],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/54F/9788366134058.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/54F/9788366134058.jpg"
+       }, {
         "id": 5,
         "title": "Szklany tron. Tom 6. Królestwo popiołów. Część 2",
         "author": "Sarah J. Maas",
@@ -41,8 +41,8 @@
         "price": 40,
         "old_price": "",
         "info": ["", ""],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/6EA/9788328068926.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/6EA/9788328068926.jpg"
+       }, {
         "id": 6,
         "title": "Pieśń Lodu i Ognia. Tom 2. Starcie królów",
         "author": "George R.R. Martin",
@@ -50,8 +50,8 @@
         "price": 123,
         "old_price": "",
         "info": ["", "nowość"],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/3AB/56145500192KS.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/3AB/56145500192KS.jpg"
+       }, {
         "id": 7,
         "title": "Kołysanka z Auschwitz",
         "author": "Mario Escobar",
@@ -59,8 +59,8 @@
         "price": 50,
         "old_price": "",
         "info": ["", ""],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/366/9788366134836.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/366/9788366134836.jpg"
+       }, {
         "id": 8,
         "title": "Kwiat Paproci. Tom 0,5. Jaga",
         "author": "Katarzyna Berenika Miszczuk",
@@ -68,8 +68,8 @@
         "price": 40,
         "old_price": "",
         "info": ["", ""],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/D8E/9788328066335.jpg"       
-       },{   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/D8E/9788328066335.jpg"
+       },{
         "id": 9,
         "title": "Listy zza grobu",
         "author": "Remigiusz Mróz",
@@ -77,8 +77,8 @@
         "price": 45,
         "old_price": 60,
         "info": ["promocja", "nowość"],
-        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/EB7/9788380756830.jpg"       
-       }, {   
+        "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/EB7/9788380756830.jpg"
+       }, {
            "id": 10,
            "title": "Pacjentka",
            "author": "Alex Michaelides",
@@ -86,8 +86,8 @@
            "price": 56,
            "old_price": "",
            "info": ["", ""],
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/008/9788328061477.jpg"       
-          }, {   
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/008/9788328061477.jpg"
+          }, {
            "id": 11,
            "title": "Złota klatka",
            "author": "Camilla Lackberg",
@@ -95,17 +95,17 @@
            "price": 44,
            "old_price": "",
            "info": ["", "nowość"],
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/FC2/9788381430258.jpg"       
-          }, {   
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/FC2/9788381430258.jpg"
+          }, {
            "id": 12,
            "title": "Narodziny królowej",
            "author": "Rebecca Ross",
            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula augue, lobortis ut dolor in, rhoncus lacinia massa. Sed id elementum velit, porttitor semper risus. Fusce tristique, eros et molestie interdum, felis erat convallis risus, vitae pharetra leo sem non lacus. Morbi sed nunc sit amet diam pharetra maximus. Proin congue dictum eros, eget sollicitudin tellus dapibus eu. Vestibulum eu placerat mauris. Aenean rhoncus, mi sed pulvinar fermentum, tellus massa auctor nisl, nec fermentum mi sem sit amet turpis.",
            "price": 25,
            "old_price": 30,
-           "info": ["promocja", "nowość"], 
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/54F/9788366134058.jpg"       
-          }, {   
+           "info": ["promocja", "nowość"],
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/54F/9788366134058.jpg"
+          }, {
            "id": 13,
            "title": "Szklany tron. Tom 6. Królestwo popiołów. Część 2",
            "author": "Sarah J. Maas",
@@ -113,8 +113,8 @@
            "price": 40,
            "old_price": "",
            "info": ["", "nowość"],
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/6EA/9788328068926.jpg"       
-          }, {   
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/6EA/9788328068926.jpg"
+          }, {
            "id": 14,
            "title": "Pieśń Lodu i Ognia. Tom 2. Starcie królów",
            "author": "George R.R. Martin",
@@ -122,8 +122,8 @@
            "price": 40,
            "old_price": "",
            "info": ["", ""],
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/3AB/56145500192KS.jpg"       
-          }, {   
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/3AB/56145500192KS.jpg"
+          }, {
            "id": 15,
            "title": "Kołysanka z Auschwitz",
            "author": "Mario Escobar",
@@ -131,8 +131,8 @@
            "price": 90,
            "old_price": "",
            "info": ["", ""],
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/366/9788366134836.jpg"       
-          }, {   
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/366/9788366134836.jpg"
+          }, {
            "id": 16,
            "title": "Kwiat Paproci. Tom 0,5. Jaga",
            "author": "Katarzyna Berenika Miszczuk",
@@ -140,7 +140,7 @@
            "price": 53,
            "old_price": 61,
            "info": ["promocja", "nowość"],
-           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/D8E/9788328066335.jpg"       
+           "imgurl": "https://cf2-taniaksiazka.statiki.pl/images/popups/D8E/9788328066335.jpg"
           }
 
 ]

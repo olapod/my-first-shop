@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import "./googleMap.scss";
+import './googleMap.scss';
 
 const config = require('../../server/config');
 
-const AnyReactComponent = ({ text }) => <div className="targetAdress">{text}</div>;
+const AnyReactComponent = ({ text }) => <div className='targetAdress'>{text}</div>;
 
 class GoogleMap extends Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Button from 'react-bootstrap/Button';
-import "./recipe.scss"
+import './recipe.scss'
 
 
 class Recipe extends Component{
@@ -21,15 +21,15 @@ class Recipe extends Component{
 
     render(){
         return(
-            <div className="recipe-container container">
-                <div className="collection">
+            <div className='recipe-container container'>
+                <div className='collection'>
                     <label>
-                        <input type="checkbox" ref="shipping" onChange= {this.handleChecked} />
+                        <input type='checkbox' ref='shipping' onChange= {this.handleChecked} />
                         <span>Koszt wysyłki(+12zł)</span>
                     </label><br/>
                     <span>Razem: {this.props.total} zł</span>
                 </div>
-                <div className="checkout">
+                <div className='checkout'>
                     <Button>Zamawiam</Button>
                 </div>
             </div>

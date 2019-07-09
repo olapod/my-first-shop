@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export class Terms extends React.Component {
   render() {
-    return <div className="terms">
+    return <div className='terms'>
       <h3>Regulamin</h3>
-      <h4>Sklep Firmowy "AlexCompany"</h4>
+      <h4>Sklep Firmowy 'AlexCompany'</h4>
       <h5>1. Informacje ogólne</h5>
       <p>1.1. Sklep internetowy działający pod adresem interetowym pupill.eu, zwany dalej e-Sklepem, prowadzony jest przez firmę Pupill</p>
 
@@ -19,7 +19,7 @@ export class Terms extends React.Component {
       <h5>3. Procedura zawarcia umowy sprzedaży</h5>
       <p>3.1. W celu zawarcia umowy sprzedaży za pośrednictwem e-Sklepu internetowego należy wejść na stronę internetową www.pupill.eu, dokonać wyboru towaru, podejmując kolejne czynności techniczne w oparciu o wyświetlane Klientowi komunikaty oraz informacje dostępne na stronie.</p>
       <p>3.2. Wybór zamawianych towarów przez Klienta jest dokonywany poprzez ich dodanie do koszyka.</p>
-      <p>3.3. W trakcie składania zamówienia – do momentu naciśnięcia przycisku „Zamawiam" – Klient ma możliwość modyfikacji wprowadzonych danych oraz w zakresie wyboru towaru. W tym celu należy kierować się wyświetlanymi Klientowi komunikatami oraz informacjami dostępnymi na stronie.</p>
+      <p>3.3. W trakcie składania zamówienia – do momentu naciśnięcia przycisku „Zamawiam' – Klient ma możliwość modyfikacji wprowadzonych danych oraz w zakresie wyboru towaru. W tym celu należy kierować się wyświetlanymi Klientowi komunikatami oraz informacjami dostępnymi na stronie.</p>
       <p>3.4. Cena podana przy każdym towarze jest wiążąca w chwili złożenia przez Klienta zamówienia.</p>
       <p>3.5. W trakcie składania zamówienia Klient wybiera rodzaj przesyłki.</p>
       <p>3.6. Koszt dostawy ponosi Klient i uzależniony jest on od ilości zamówionych produktów oraz rodzaju przesyłki wybranej przez Klienta.</p>
@@ -29,10 +29,10 @@ export class Terms extends React.Component {
       <p>c.) wybrana metoda płatności,</p>
       <p>d.) wybrany sposób dostawy,</p>
       <p>e.) czas dostawy,</p>
-      <p>3.8. W celu wysłania zamówienia konieczne jest dokonanie akceptacji treści Regulaminu, podanie danych osobowych oznaczonych jako obowiązkowe oraz naciśnięcie przycisku „Złóż zamówienie".</p>
+      <p>3.8. W celu wysłania zamówienia konieczne jest dokonanie akceptacji treści Regulaminu, podanie danych osobowych oznaczonych jako obowiązkowe oraz naciśnięcie przycisku „Złóż zamówienie'.</p>
       <p>3.9. Zamówienia, w których nie podano pełnych danych adresowych, nie będą realizowane.</p>
       <p>3.10. Wysłanie przez Klienta zamówienia stanowi oświadczenie woli zawarcia z e-Sklepem umowy sprzedaży, zgodnie z treścią Regulaminu.</p>
-      <p>3.11. Po złożeniu zamówienia, Klient otrzymuje wiadomość e-mail zatytułowaną -Sklep Patronacki Firmy Pupill -Potwierdzenie otrzymania zamówienia "nazwa użytkownika", zawierającą ostateczne potwierdzenie wszystkich istotnych elementów zamówienia.</p>
+      <p>3.11. Po złożeniu zamówienia, Klient otrzymuje wiadomość e-mail zatytułowaną -Sklep Patronacki Firmy Pupill -Potwierdzenie otrzymania zamówienia 'nazwa użytkownika', zawierającą ostateczne potwierdzenie wszystkich istotnych elementów zamówienia.</p>
       <p>3.12. Umowę traktuje się za zawartą z momentem otrzymania przez Klienta wiadomości e-mail, o której mowa powyżej.</p>
       <p>3.13. Umowa sprzedaży zawierana jest w języku polskim, o treści zgodnej z Regulaminem.</p>
 
