@@ -1,3 +1,4 @@
+'use-strict';
 const nodemailer = require('nodemailer');
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');

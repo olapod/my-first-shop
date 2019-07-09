@@ -24,3 +24,4 @@ yarn-error.log*
 
 #passwords config
 /src/server/config
+/cloud-functions-sendmail/functions/config
