@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Kodilla Last Project
-## React, Javascript, HTML, CSS
+## React, Javascript, HTML, CSS, Bootstrap, RWD, Nodemailer, Axios, Firebase Functions
 
 ## Project Preview
 https://my-first-shop-905fb.firebaseapp.com
