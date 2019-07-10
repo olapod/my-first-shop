@@ -1,14 +1,14 @@
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
 
   .message-form {
-    width: 40%;
     margin-right: 50px;
   }
 
-.contactData {
-    width: 60%;
-  }
+// .contactData {
+//     width: 55%;
+//   }
 
 .map-container {
     height: 300px;

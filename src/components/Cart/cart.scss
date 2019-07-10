@@ -20,6 +20,20 @@
       margin-right: 20px;
       margin-left: 20px;
     }
+
+    .itemsNumber {
+      display: flex;
+    }
+
+    @media (max-width: 991.98px) {
+      a {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+      .itemsNumber {
+        min-width: 115px;
+      }
+    }
   }
 }
 
@@ -39,4 +53,3 @@
     }
   }
 }
-

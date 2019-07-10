@@ -40,18 +40,20 @@ class Cart extends Component {
                       <td>Tytuł: {item.title}</td>
                       <td>Cena: {item.price} zł</td>
                       <td>
-                        <Link to='/koszyk'>
-                          <FontAwesomeIcon icon={faPlusCircle} onClick={()=>{this.handleAddQuantity(item.id)}}></FontAwesomeIcon>
-                        </Link>
-                        <span>Ilość: {item.quantity}</span>
-                        <Link to='/koszyk'>
-                          <FontAwesomeIcon icon={faMinusCircle} onClick={()=>{this.handleSubtractQuantity(item.id)}}></FontAwesomeIcon>
-                        </Link>
+                        <div className="itemsNumber">
+                          <Link to='/koszyk'>
+                            <FontAwesomeIcon icon={faPlusCircle} onClick={()=>{this.handleAddQuantity(item.id)}}></FontAwesomeIcon>
+                          </Link>
+                          <span>Ilość: {item.quantity}</span>
+                          <Link to='/koszyk'>
+                            <FontAwesomeIcon icon={faMinusCircle} onClick={()=>{this.handleSubtractQuantity(item.id)}}></FontAwesomeIcon>
+                          </Link>
+                        </div>
                       </td>
                       <td>
-                        <Button onClick={()=>{this.handleRemove(item.id)}}>Usuń</Button>
+                          <Button onClick={()=>{this.handleRemove(item.id)}}>Usuń</Button>
                       </td>
-                    </tr>
+                  </tr>
                     )
                 }
               )}

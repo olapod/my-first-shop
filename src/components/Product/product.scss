@@ -27,3 +27,13 @@
         text-transform: uppercase;
     }
 }
+
+@media (max-width: 991.98px) {
+    .product-wrapper {
+        min-width: 180px;
+        min-height: 250px;
+    }
+    .product-info-wrapper {
+        width: 180px;
+    }
+ }
